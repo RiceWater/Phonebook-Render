@@ -1,5 +1,4 @@
 const express = require('express')
-const cors = require('cors')
 var morgan = require('morgan')
 
 morgan.token('type', (req, _) => JSON.stringify(req.body))
@@ -38,7 +37,7 @@ var persons = [
 ]
 
 const app = express()
-app.use(cors())
+app.use(express.static('dist'))
 app.use(customMorganFormat)
 app.use(express.json())
 
