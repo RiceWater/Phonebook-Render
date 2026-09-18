@@ -5,6 +5,9 @@ npm-shrinkwrap.json
 *.log
 *.gz
 
+#custom
+.env
+
 # Yarn
 yarn-error.log
 yarn.lock
